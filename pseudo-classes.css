@@ -32,3 +32,18 @@ article.first-of-type section:first-of-type {
 article.three section {
     background: orange;
 }
+
+article.three :first-child {
+    background: goldenrod;
+}
+
+article.three :last-child {
+    background: darkslategray;
+}
+
+article::before {
+    display: block;
+    content:    "Article parent element";
+    border: 1px dotted gray;
+    background: royalblue;
+}
